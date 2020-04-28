@@ -1,6 +1,6 @@
 // Synatx using is proto3
 syntax = "proto3";
-import "part2MessageWriting/date.proto"
+import "part2MessageWriting/4-date-with-package.proto"
 message person
 {
 
@@ -15,7 +15,7 @@ repeated phone_numbers =7;
 
 EyeColour eyecolour=8;
 
-Date birthday =9;
+my.date.Date birthday =9;
 
 // we define nested message for address of a person 
 message Address
