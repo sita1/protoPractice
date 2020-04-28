@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Money
+{
+// 3 ltter currency code defined in ISO 4217
+string currency_code =1;
+
+// the whole amount example currency code is INR then 1 unit is 1 indian rupee
+int64 units =2;
+
+int32 nanos =3;
+}
